@@ -20,6 +20,16 @@ namespace Pubcrew.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Business> Businesses { get; set; }
+
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<BizRole> BizRoles { get; set; }
+
+
+
+
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
