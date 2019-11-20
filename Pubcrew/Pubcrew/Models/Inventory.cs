@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -16,7 +17,11 @@ namespace Pubcrew.Models
         [Display(Name = "Product Description")]
         public string productDescription { get; set; }
 
-        public int currentInventory { get; set; }
+        public int currentInventory { get; set;}
+
+        [ForeignKey("Location")]
+        public int locationId { get; set; }
+        public Location Location { get; set; }
 
     }
 }

@@ -23,8 +23,18 @@ namespace Pubcrew.Models
         public DbSet<Business> Businesses { get; set; }
 
         public DbSet<Location> Locations { get; set; }
+
         public DbSet<AppUser> AppUsers { get; set; }
+
         public DbSet<BizRole> BizRoles { get; set; }
+
+        public DbSet<Inventory> Inventories { get; set; }
+
+        public DbSet<Beverage> Beverages { get; set; }
+
+        public DbSet<Food> Foods { get; set; }
+
+        public DbSet<Amenity> Amenities { get; set; }
 
 
 

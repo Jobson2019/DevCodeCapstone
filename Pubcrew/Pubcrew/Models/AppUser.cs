@@ -24,8 +24,7 @@ namespace Pubcrew.Models
         [Display(Name = "Location")]
         public ICollection<Inventory> Location { get; set; }
 
-        [ForeignKey("Business")]
-        public int BusinessId { get; set; }
+        
 
     }
 }
