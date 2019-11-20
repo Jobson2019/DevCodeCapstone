@@ -18,9 +18,9 @@ namespace Pubcrew.Models
         [Display(Name = "Product Line Name")]
         public string bevProductLineName { get; set; }
 
-        [ForeignKey("Location")]
-        public int locationId { get; set; }
-        public  Location Location { get; set; }
+        [ForeignKey("Inventory")]
+        public int BusinessId { get; set; }
+        public  Inventory Inventory { get; set; }
 
 
 

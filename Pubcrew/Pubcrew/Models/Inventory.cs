@@ -19,6 +19,16 @@ namespace Pubcrew.Models
 
         public int currentInventory { get; set;}
 
+        [ForeignKey("Beverage")]
+        public ICollection<Beverage> Beverages { get; set; }
+
+        [ForeignKey("Food")]
+        public ICollection<Food> Foods { get; set; }
+
+        [ForeignKey("Amenities")]
+        public ICollection<Amenity> Amenities { get; set; }
+        
+
         [ForeignKey("Location")]
         public int locationId { get; set; }
         public Location Location { get; set; }

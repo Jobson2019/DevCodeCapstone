@@ -20,7 +20,7 @@ namespace Pubcrew.Models
 
         [ForeignKey("Inventory")]
         public int inventoryId { get; set; }
-        public Inventory inventory { get; set; }
+        public Inventory Inventory { get; set; }
 
 
 

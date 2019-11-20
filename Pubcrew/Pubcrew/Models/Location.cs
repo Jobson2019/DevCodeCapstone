@@ -16,9 +16,9 @@ namespace Pubcrew.Models
         [Display(Name = "Location Name")]
         public string locationName { get; set; }
 
-        [ForeignKey("AppUser")]
-        public int UserId { get; set; }
-        public AppUser AppUser { get; set; }
+        [ForeignKey("Business")]
+        public int BusinessId { get; set; }
+        public Business Business { get; set; }
 
     }
 }
