@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5738e38c63864d0c8313eb9ff9a1b3da" Name="Diagram1" ZoomLevel="59">
+        <EntityTypeShape EntityType="Model2.C__MigrationHistory" Width="1.5" PointX="16.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.Amenity" Width="1.5" PointX="10.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.AppUser" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.AspNetRole" Width="1.5" PointX="10.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.AspNetUserClaim" Width="1.5" PointX="15.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.AspNetUserLogin" Width="1.5" PointX="15.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.AspNetUser" Width="1.5" PointX="13" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.Beverage" Width="1.5" PointX="2.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.BizRole" Width="1.5" PointX="1.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.Business" Width="1.5" PointX="7.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.Food" Width="1.5" PointX="6.625" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.Inventory" Width="1.5" PointX="6.625" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model2.Location" Width="1.5" PointX="7.375" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="Model2.FK_dbo_Amenities_dbo_Inventories_locationId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_BizRoles_dbo_AppUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_Inventories_dbo_AppUsers_AppUser_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_Beverages_dbo_Inventories_BusinessId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_Locations_dbo_Businesses_BusinessId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_Foods_dbo_Inventories_inventoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.FK_dbo_Inventories_dbo_Locations_locationId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model2.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -164,16 +164,89 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amenity.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppUser.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AspNetRole.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUser.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserClaim.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AspNetUserLogin.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Beverage.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BizRole.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Business.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="C__MigrationHistory.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERDone.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERDone.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERDone.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERDone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERDone.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ERDtwo.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERDtwo.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERDtwo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERDtwo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ERDtwo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ERDtwo.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Location.cs">
+      <DependentUpon>ERDone.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911201947070_initial.cs" />
+    <Compile Include="Migrations\201911201947070_initial.Designer.cs">
+      <DependentUpon>201911201947070_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -202,6 +275,26 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="ERDone.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERDone.edmx</DependentUpon>
+      <LastGenOutput>ERDone.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ERDone.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERDone.edmx</DependentUpon>
+      <LastGenOutput>ERDone.cs</LastGenOutput>
+    </Content>
+    <Content Include="ERDtwo.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERDtwo.edmx</DependentUpon>
+      <LastGenOutput>ERDtwo.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ERDtwo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ERDtwo.edmx</DependentUpon>
+      <LastGenOutput>ERDtwo.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -214,6 +307,20 @@
     </EntityDeploy>
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ERDone.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ERDone.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ERDone.edmx.diagram">
+      <DependentUpon>ERDone.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="ERDtwo.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ERDtwo.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="ERDtwo.edmx.diagram">
+      <DependentUpon>ERDtwo.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -276,6 +383,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201911201947070_initial.resx">
+      <DependentUpon>201911201947070_initial.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
